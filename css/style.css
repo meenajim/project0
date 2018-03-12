@@ -1,0 +1,35 @@
+ body{
+  margin: 0px;
+  margin-top: 10px;
+  background-color:grey;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.column{
+   overflow:hidden;
+   background-color: #000000;
+   display: inline-block;
+   width: 90px;
+   height: 70px;
+   text-align: center;
+   margin-top: 4px;
+   font-size: 30px;
+   padding-top: 30px;
+   color: #ffffff;
+   border-radius:.5em;
+}
+
+#reset{
+  padding:20px;
+  font-size: 20px;
+  margin-top:10px;
+}
+
+footer{
+  padding:10px 0;
+  font-weight:bold;
+  font-size:14px;
+  color:white;
+  text-align:center;
+}
