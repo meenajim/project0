@@ -127,34 +127,31 @@ const checkWinner = function(){
 
 //console.log('the winner is!!!! ' + winner);
 
-let winner=checkWinner();
+let winner = checkWinner();
 if(winner)
     {
-   $('.winner').css("color","aqua");
-    // $('.winner').addClass("animated zoomIn");
+   //$('.winner').css("color","aqua");
+
+    //$('.winner').addClass('animated zoomIn');
+
     if(winner ==='X')
     {
-
     $('.winner').html(`${winner} wins`);
-    $('.winner').html(`Player 1 using token:${winner} WINS!!!`);
+    // $('.winner').html(`${winner} wins`);
+    // $('.winner').html(`Player 1 using token:${winner} WINS!!!`);
 
     }
     if (winner === 'O')
     {
-    $('.winner').html(`Player 2 using token:${winner} WINS!!!`);
+    $('.winner').html(`${winner} wins`);
+    // $('.winner').html(`Player 2 using token:${winner} WINS!!!`);
     }
     if (winner === 'draw')
     {
     $('.winner').html(`Game is a draw!!`);
+    //$('h2').addClass('animated zoomOut')
     }
   //  $('.winner').animate({'fontSize':"4em"});
-    //$('.winner').stop(true,true);
-    //resetting to stop playing
-    // resetBoard();
-    // if (winner === "X" || winner === "O") {
-    //     return;
-    // }
-     // console.log(`${checkWinner()} is  the winner`);
     }
 
 });

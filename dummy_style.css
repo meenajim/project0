@@ -13,13 +13,7 @@
 
 h2{
   font-weight: bold;
-
 }
-
-.win_display{
-  margin-top: 400px;
-}
-
 img{
   width:60px;
   height:60px;
@@ -39,7 +33,7 @@ display:flex;
 }
 
 
-/* .column{
+.column{
    overflow: hidden;
    background-color: #000000;
    display: inline-block;
@@ -51,7 +45,7 @@ display:flex;
    padding-top: 30px;
    color: #ffffff;
    border-radius:.5em;
-} */
+}
 
 
 
@@ -59,7 +53,6 @@ display:flex;
   padding:20px;
   font-size: 20px;
   margin-top:10px;
-  /* margin-top:400px; */
 }
 
 footer{
@@ -70,7 +63,7 @@ footer{
   text-align:center;
 }
 
-.box
+/* .box
 {
   position : absolute;
   display:inline-block;
@@ -94,7 +87,7 @@ footer{
    padding-top: 30px;
    color: #ffffff;
    border-radius:.5em; */
-
+ /*
 }
 .row0
 {
@@ -122,19 +115,14 @@ footer{
 .col0{
   left:400px;
   border-right:red solid 3px;
-  margin-top:-200px;
+
 }
 
 .col1{
   left:500px;
   border-right: red solid 3px;
-  margin-top:-200px;
-
 }
-
 
 .col2{
   left:600px;
-  margin-top:-200px;
-
-}
+} */
