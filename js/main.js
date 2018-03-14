@@ -132,7 +132,7 @@ if(winner)
     {
    //$('.winner').css("color","aqua");
 
-    //$('.winner').addClass('animated zoomIn');
+    $('.winner').addClass('animated zoomIn');
 
     if(winner ==='X')
     {
@@ -160,6 +160,7 @@ if(winner)
     $('#reset').click(function(){
     resetBoard();
     $('.winner').html(' ');
+    $('.winner').removeClass('animated zoomIn');
     //console.log(gameBoard);
   });
 });
