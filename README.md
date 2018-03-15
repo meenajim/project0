@@ -24,6 +24,7 @@ The game runs on the browser. No installation required.
 
 * [jQuery](http://jquery.com)
 
+
 ## Versioning
 
 For the versions available, see the [tags on this repository](https://github.com/meenajim/project0).

@@ -90,6 +90,7 @@ const checkWinner = function(){
 //when a column is clicked
     $('.column').click(function()
     {
+      $(this).css('color','#00ffe1fa');
       //if there is an X or O in the selected column, then return
       if ($(this).html() === "X" || $(this).html() === "O"){
           return;
@@ -118,30 +119,24 @@ const checkWinner = function(){
     if (token === player1)
     {
       token = player2;
-      //console.log(token);
     }
     else if(token === player2)
     {
       token = player1;
     }
 
-//    });
-
-
-//console.log('the winner is!!!! ' + winner);
-
 let winner = checkWinner();
 if(winner)
     {
    //$('.winner').css("color","aqua");
 
-   // $('.winner').addClass('animated zoomIn');
-
     if(winner ==='X')
     {
     $('.winner').addClass('animated zoomIn');
+    $('.winner').css('color','#ffffff');
     $('.winner').html(`${winner} wins`);
     xwinCount = xwinCount + 1;
+    $(".player1").css('color','#ebf802e3');
     $(".player1").html(`Player 1 (X): ${xwinCount}`);
     // $('.winner').html(`${winner} wins`);
     // $('.winner').html(`Player 1 using token:${winner} WINS!!!`);
@@ -150,18 +145,21 @@ if(winner)
     if (winner === 'O')
     {
     $('.winner').addClass('animated zoomIn');
+    $('.winner').css('color','#ffffff');
+
     $('.winner').html(`${winner} wins`);
     owinCount = owinCount + 1;
+    $(".player2").css('color','#ebf802e3');
+
     $(".player2").html(`Player 2 (O): ${owinCount}`);
     // $('.winner').html(`Player 2 using token:${winner} WINS!!!`);
     }
     if (winner === 'draw')
     {
     $('.winner').addClass('animated jello');
-    $('.winner').html(`Game is a draw!!`);
-    //$('h2').addClass('animated zoomOut')
+    $('.winner').css('color','#ffffff');
+    $('.winner').html(`Draw!`);
     }
-  //  $('.winner').animate({'fontSize':"4em"});
     }
 
 });
