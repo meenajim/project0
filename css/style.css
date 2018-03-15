@@ -79,7 +79,12 @@ footer{
   margin-top:2px;
   padding-top:3px;
   font-size:80px;
+
 }
+
+/* .container{
+  display:flex;
+} */
 
 .column{
    overflow: hidden;
@@ -137,4 +142,18 @@ footer{
   left:600px;
   margin-top:-200px;
 
+}
+
+.winnerdisplay{
+display:flex;
+}
+
+.player1
+{
+text-align:right;
+}
+
+.player2
+{
+  text-align:left;
 }

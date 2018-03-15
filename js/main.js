@@ -4,7 +4,8 @@ const player1 = 'X';
 const player2 = 'O';
 const noplayer = '';
 let token = player1;
-
+let xwinCount=0;
+let owinCount=0;
 $(document).ready(function(){
     let gameBoard = [
       ['','',''],
@@ -33,6 +34,7 @@ const resetBoard = function(){
 const checkWinner = function(){
   // console.log(gameBoard);
   //check horizontal
+  if(token !== noplayer) {
   for(let i = 0; i < 3; i++)
   {
     if(gameBoard[i][0]!== "" && gameBoard[i][0] === gameBoard[i][1] && gameBoard[i][0] === gameBoard[i][2])
@@ -84,6 +86,7 @@ const checkWinner = function(){
       return "draw" ;
     }
   }
+}
 //when a column is clicked
     $('.column').click(function()
     {
@@ -132,22 +135,29 @@ if(winner)
     {
    //$('.winner').css("color","aqua");
 
-    $('.winner').addClass('animated zoomIn');
+   // $('.winner').addClass('animated zoomIn');
 
     if(winner ==='X')
     {
+    $('.winner').addClass('animated zoomIn');
     $('.winner').html(`${winner} wins`);
+    xwinCount = xwinCount + 1;
+    $(".player1").html(`Player 1 (X): ${xwinCount}`);
     // $('.winner').html(`${winner} wins`);
     // $('.winner').html(`Player 1 using token:${winner} WINS!!!`);
 
     }
     if (winner === 'O')
     {
+    $('.winner').addClass('animated zoomIn');
     $('.winner').html(`${winner} wins`);
+    owinCount = owinCount + 1;
+    $(".player2").html(`Player 2 (O): ${owinCount}`);
     // $('.winner').html(`Player 2 using token:${winner} WINS!!!`);
     }
     if (winner === 'draw')
     {
+    $('.winner').addClass('animated jello');
     $('.winner').html(`Game is a draw!!`);
     //$('h2').addClass('animated zoomOut')
     }
