@@ -108,7 +108,7 @@ $(document).ready(function() {
                 $('.winner').html(`Player 1 (${winner}) wins`);
                 //Increment win count for Player 1 and display
                 xwinCount = xwinCount + 1;
-                $(".player1").css('color', '#00ffe1fa');
+                // $(".player1").css('color', '#00ffe1fa');
                 $(".player1").html(`Player 1 (X): ${xwinCount}`);
                 // $(".player1").html(`${xwinCount}`);
 

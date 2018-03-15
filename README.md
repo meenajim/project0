@@ -25,14 +25,10 @@ The game runs on the browser. No installation required.
 * [jQuery](http://jquery.com)
 
 
-## Versioning
-
-For the versions available, see the [tags on this repository](https://github.com/meenajim/project0).
-
 ## Authors
 
-* **Meena Jim** - *Initial work* - [Meena's Repository](https://github.com/meenajim/project0)
+* **Meena Jim** - *Initial work* - [See the live site here](https://meenajim.github.io/project0/)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
