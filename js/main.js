@@ -91,7 +91,7 @@ $(document).ready(function() {
         const current_col = $(this).data('colid');
         //inserting token to the same position in the gameboard array.
         gameBoard[current_row][current_col] = token;
-        console.log(gameBoard);
+        //console.log(gameBoard);
         //switch player
         if (token === player1) {
             token = player2;
